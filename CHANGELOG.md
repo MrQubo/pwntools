@@ -86,7 +86,8 @@ The table below shows which release corresponds to each branch, and what date th
 - [#2484][2484] Allow to disable caching
 - [#2291][2291] Fix attaching to a gdbserver with tuple `gdb.attach(('0.0.0.0',12345))`
 - [#2410][2410] Add `tube.upload_manually` to upload files in chunks
-- [#2476][2476] Deprecate 'keepends' argument in favor of 'drop'
+- [#2502][2502] Fix loading ELF files without valid .dynamic section
+- [#2476][2476] Deprecate 'keepends' argument in favor of 'drop' in `tube.recvline*`
 
 [2471]: https://github.com/Gallopsled/pwntools/pull/2471
 [2358]: https://github.com/Gallopsled/pwntools/pull/2358
@@ -101,6 +102,7 @@ The table below shows which release corresponds to each branch, and what date th
 [2484]: https://github.com/Gallopsled/pwntools/pull/2484
 [2291]: https://github.com/Gallopsled/pwntools/pull/2291
 [2410]: https://github.com/Gallopsled/pwntools/pull/2410
+[2502]: https://github.com/Gallopsled/pwntools/pull/2502
 [2476]: https://github.com/Gallopsled/pwntools/pull/2476
 
 ## 4.14.0 (`beta`)
@@ -146,6 +148,12 @@ The table below shows which release corresponds to each branch, and what date th
 [2382]: https://github.com/Gallopsled/pwntools/pull/2382
 [2435]: https://github.com/Gallopsled/pwntools/pull/2435
 [2437]: https://github.com/Gallopsled/pwntools/pull/2437
+
+## 4.13.2
+
+- [#2497][2497] Fix remote.fromsocket() to handle AF_INET6 socket
+
+[2497]: https://github.com/Gallopsled/pwntools/pull/2497
 
 ## 4.13.1 (`stable`)
 
